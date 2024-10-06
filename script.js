@@ -1,9 +1,9 @@
-const form = document.querySelector('.form-container');
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-const typeSelect = document.querySelector('#type');
+const form = document.querySelector('.form-container');  // make dom object of form-container
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');  // make dom obeject of all checkboxes
+const typeSelect = document.querySelector('#type'); // make dom object of typeSelect
 const totalPriceElement = document.querySelector('#totalPrice');
-let total = 0;
-
+let total = 0;  //make dom object of totalPriceElement
+ 
 const pancakePriceCalc = () => {
     total = parseInt(typeSelect.value) || 0;
 
